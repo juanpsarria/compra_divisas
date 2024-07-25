@@ -20,6 +20,8 @@ def compra_divisas(monto_ars, cotizacion_usd):
     # Dinero sin gastar
     dinero_sin_gastar = (max_dolares - dolares_comprados) * cotizacion_usd
     print(f'Su vuelto es ${dinero_sin_gastar:.2f}.')
+    
+    #Se retornan los valores en caso de necesitar usarlos
     return {
         "max_dolares": max_dolares,
         "dolares_comprados": dolares_comprados,
